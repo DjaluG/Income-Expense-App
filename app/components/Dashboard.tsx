@@ -29,15 +29,6 @@ export default function Dashboard() {
     setTransactions([...transactions, newTransaction]);
   };
 
-//   const fetchTransactions = async () => {
-//     const response = await fetch('/api/transactions');
-//     const data = await response.json();
-//     setTransactions(data);
-//   };
-
-//   useEffect(() => {
-//     fetchTransactions();
-//   }, []);
 const fetchTransactions = async () => {
     try {
       const response = await fetch('/api/transactions');
